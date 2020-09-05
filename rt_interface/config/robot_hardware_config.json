@@ -1,0 +1,1249 @@
+{
+  "bot_variant": "proto_test",
+  "butler_2_0": {
+    "accessories": [
+      {
+        "accessory_idx": 1,
+        "accessory_name": "left_wheel",
+        "accessory_params": {
+          "phys_params": {
+            "ticks_per_motor_rev": 16384,
+            "wheel_radius": 0.125,
+            "gearbox_ratio": 9,
+            "max_motor_speed": 3000
+          },
+          "sensor_params": {
+            "sensor_handle": 1
+          },
+          "actuator_params": {
+            "channel": 0,
+            "comm_type": "uart",
+            "uart": {
+              "channel": 4,
+              "baudrate": 115200
+            },
+            "driver_name": "HBL2360"
+          }
+        },
+        "accessory_controls": {
+          "feedback_frequency": 50,
+          "publish_feedback": 1,
+          "job_type": "velocity",
+          "jobs": {
+            "velocity": [
+              {
+                "timeout": 0.0,
+                "velocity": 0.0
+              }
+            ],
+            "position": [
+              {
+                "timeout": 0.0,
+                "ticks_to_move": 1234,
+                "max_speed": 1000,
+                "accel": 1.0,
+                "decel": 1.0
+              }
+            ]
+          }
+        },
+        "accessory_info": {
+          "actuator_feedback": {
+            "timestamp": 0,
+            "seq_id": 0,
+            "absolute_ticks": 0,
+            "measured_speed": 0.0
+          }
+        }
+      },
+      {
+        "accessory_idx": 2,
+        "accessory_name": "right_wheel",
+        "accessory_params": {
+          "phys_params": {
+            "ticks_per_motor_rev": 16384,
+            "wheel_radius": 0.125,
+            "gearbox_ratio": 9,
+            "max_motor_speed": 3000
+          },
+          "sensor_params": {
+            "sensor_handle": 2
+          },
+          "actuator_params": {
+            "channel": 1,
+            "comm_type": "uart",
+            "uart": {
+              "channel": 4,
+              "baudrate": 115200
+            },
+            "driver_name": "HBL2360"
+          }
+        },
+        "accessory_controls": {
+          "feedback_frequency": 50,
+          "publish_feedback": 1,
+          "jobs": {
+            "velocity": [
+              {
+                "timestamp": 1,
+                "seq_id": "1",
+                "timeout": 0.0,
+                "velocity": 0.0
+              }
+            ],
+            "position": [
+              {
+                "timestamp": 1,
+                "seq_id": "1",
+                "timeout": 0.0,
+                "ticks_to_move": 1234,
+                "max_speed": 1000,
+                "accel": 1.0,
+                "decel": 1.0
+              }
+            ]
+          }
+        },
+        "accessory_info": {
+          "actuator_feedback": {
+            "timestamp": 0,
+            "seq_id": 0,
+            "absolute_ticks": 0,
+            "measured_speed": 0.0
+          }
+        }
+      }
+    ],
+    "subsystems": [
+      {
+        "connection_type": "udp",
+        "name": "safety_system",
+        "port": 6000,
+        "ip": "10.3.1.59"
+      },
+      {
+        "connection_type": "udp",
+        "name": "rt_axes_controls",
+        "port": 5101,
+        "ip": "10.3.1.60"
+      },
+      {
+        "connection_type": "udp",
+        "name": "rt_axes_feedback",
+        "port": 5100,
+        "ip": "10.3.1.60"
+      }
+    ]
+  },
+  "butler_2_1": {
+    "accessories": [
+      {
+        "accessory_idx": 1,
+        "accessory_name": "left_wheel",
+        "accessory_polarity": -1,
+        "accessory_params": {
+          "phys_params": {
+            "ticks_per_motor_rev": 16384,
+            "wheel_radius": 0.1016,
+            "gearbox_ratio": 9,
+            "max_motor_speed": 3000
+          },
+          "sensor_params": {
+            "sensor_handle": 1
+          },
+          "actuator_params": {
+            "channel": 1,
+            "comm_type": "uart",
+            "uart": {
+              "channel": 4,
+              "baudrate": 115200
+            },
+            "driver_name": "HBL2360"
+          }
+        },
+        "accessory_controls": {
+          "feedback_frequency": 50,
+          "publish_feedback": 1,
+          "job_type": "velocity",
+          "jobs": {
+            "velocity": [
+              {
+                "timeout": 0.0,
+                "velocity": 0.0
+              }
+            ],
+            "position": [
+              {
+                "timeout": 0.0,
+                "ticks_to_move": 1234,
+                "max_speed": 1000,
+                "accel": 1.0,
+                "decel": 1.0
+              }
+            ]
+          }
+        },
+        "accessory_info": {
+          "actuator_feedback": {
+            "timestamp": 0,
+            "seq_id": 0,
+            "absolute_ticks": 0,
+            "measured_speed": 0.0
+          }
+        }
+      },
+      {
+        "accessory_idx": 2,
+        "accessory_name": "right_wheel",
+        "accessory_polarity": 1,
+        "accessory_params": {
+          "phys_params": {
+            "ticks_per_motor_rev": 16384,
+            "wheel_radius": 0.1016,
+            "gearbox_ratio": 9,
+            "max_motor_speed": 3000
+          },
+          "sensor_params": {
+            "sensor_handle": 2
+          },
+          "actuator_params": {
+            "channel": 2,
+            "comm_type": "uart",
+            "uart": {
+              "channel": 4,
+              "baudrate": 115200
+            },
+            "driver_name": "HBL2360"
+          }
+        },
+        "accessory_controls": {
+          "feedback_frequency": 50,
+          "publish_feedback": 1,
+          "jobs": {
+            "velocity": [
+              {
+                "timestamp": 1,
+                "seq_id": "1",
+                "timeout": 0.0,
+                "velocity": 0.0
+              }
+            ],
+            "position": [
+              {
+                "timestamp": 1,
+                "seq_id": "1",
+                "timeout": 0.0,
+                "ticks_to_move": 1234,
+                "max_speed": 1000,
+                "accel": 1.0,
+                "decel": 1.0
+              }
+            ]
+          }
+        },
+        "accessory_info": {
+          "actuator_feedback": {
+            "timestamp": 0,
+            "seq_id": 0,
+            "absolute_ticks": 0,
+            "measured_speed": 0.0
+          }
+        }
+      }
+    ],
+    "subsystems": [
+      {
+        "connection_type": "udp",
+        "name": "safety_system",
+        "port": 6000,
+        "ip": "10.3.1.59"
+      },
+      {
+        "connection_type": "udp",
+        "name": "rt_axes_controls",
+        "port": 5101,
+        "ip": "10.3.1.60"
+      },
+      {
+        "connection_type": "udp",
+        "name": "rt_axes_feedback",
+        "port": 5100,
+        "ip": "10.3.1.60"
+      }
+    ]
+  },
+  "butler_xl_1_0": {
+    "accessories": [
+      {
+        "accessory_idx": 1,
+        "accessory_name": "left_wheel",
+        "accessory_polarity": -1,
+        "accessory_params": {
+          "phys_params": {
+            "ticks_per_motor_rev": 16384,
+            "wheel_radius": 0.125,
+            "gearbox_ratio": 9.0,
+            "max_motor_speed": 2000
+          },
+          "sensor_params": {
+            "sensor_handle": 1
+          },
+          "actuator_params": {
+            "channel": 1,
+            "comm_type": "uart",
+            "uart": {
+              "channel": 4,
+              "baudrate": 115200
+            },
+            "driver_name": "elmo180"
+          }
+        },
+        "accessory_controls": {
+          "feedback_frequency": 50,
+          "publish_feedback": 1,
+          "job_type": "velocity",
+          "jobs": {
+            "velocity": [
+              {
+                "timeout": 0.0,
+                "velocity": 0.0
+              }
+            ],
+            "position": [
+              {
+                "timeout": 0.0,
+                "ticks_to_move": 1234,
+                "max_speed": 1000,
+                "accel": 1.0,
+                "decel": 1.0
+              }
+            ]
+          }
+        },
+        "accessory_info": {
+          "actuator_feedback": {
+            "timestamp": 0,
+            "seq_id": 0,
+            "absolute_ticks": 0,
+            "measured_speed": 0.0
+          }
+        }
+      },
+      {
+        "accessory_idx": 2,
+        "accessory_name": "right_wheel",
+        "accessory_polarity": 1,
+        "accessory_params": {
+          "phys_params": {
+            "ticks_per_motor_rev": 16384,
+            "wheel_radius": 0.125,
+            "gearbox_ratio": 9.0,
+            "max_motor_speed": 3000
+          },
+          "sensor_params": {
+            "sensor_handle": 2
+          },
+          "actuator_params": {
+            "channel": 1,
+            "comm_type": "uart",
+            "uart": {
+              "channel": 1,
+              "baudrate": 115200
+            },
+            "driver_name": "elmo180"
+          }
+        },
+        "accessory_controls": {
+          "feedback_frequency": 50,
+          "publish_feedback": 1,
+          "jobs": {
+            "velocity": [
+              {
+                "timestamp": 1,
+                "seq_id": "1",
+                "timeout": 0.0,
+                "velocity": 0.0
+              }
+            ],
+            "position": [
+              {
+                "timestamp": 1,
+                "seq_id": "1",
+                "timeout": 0.0,
+                "relative_pos": 1234,
+                "max_speed": 1000,
+                "accel": 1.0,
+                "decel": 1.0
+              }
+            ]
+          }
+        },
+        "accessory_info": {
+          "actuator_feedback": {
+            "timestamp": 0,
+            "seq_id": 0,
+            "absolute_ticks": 0,
+            "measured_speed": 0.0
+          }
+        }
+      },
+      {
+        "accessory_idx": 3,
+        "accessory_name": "lift",
+        "accessory_polarity": 1,
+        "accessory_params": {
+          "phys_params": {
+            "ticks_per_motor_rev":0,
+            "wheel_radius": 0.0,
+            "gearbox_ratio": 1.0,
+            "max_motor_speed": 2000
+          },
+          "sensor_params": {
+            "sensor_handle": 3
+          },
+          "actuator_params": {
+            "channel": 1,
+            "comm_type": "uart",
+            "uart": {
+              "channel": 2,
+              "baudrate": 115200
+            },
+            "driver_name": "hbl2360"
+          }
+        },
+        "accessory_controls": {
+          "feedback_frequency": 50,
+          "publish_feedback": 1,
+          "job_type": "velocity",
+          "jobs": {
+            "velocity": [
+              {
+                "timeout": 0.0,
+                "velocity": 0.0
+              }
+            ],
+            "position": [
+              {
+                "timeout": 0.0,
+                "ticks_to_move": 1234,
+                "max_speed": 1000,
+                "accel": 1.0,
+                "decel": 1.0
+              }
+            ]
+          }
+        },
+        "accessory_info": {
+          "actuator_feedback": {
+            "timestamp": 0,
+            "seq_id": 0,
+            "absolute_ticks": 0,
+            "measured_speed": 0.0
+          }
+        }
+      },
+      {
+        "accessory_idx": 4,
+        "accessory_name": "aux",
+        "accessory_polarity": -1,
+        "accessory_params": {
+          "phys_params": {
+            "ticks_per_motor_rev": 0,
+            "wheel_radius": 0.0,
+            "gearbox_ratio": 23.5,
+            "max_motor_speed": 2000
+          },
+          "sensor_params": {
+            "sensor_handle": 4
+          },
+          "actuator_params": {
+            "channel": 2,
+            "comm_type": "uart",
+            "uart": {
+              "channel": 2,
+              "baudrate": 115200
+            },
+            "driver_name": "hbl2360"
+          }
+        },
+        "accessory_controls": {
+          "feedback_frequency": 50,
+          "publish_feedback": 1,
+          "job_type": "velocity",
+          "jobs": {
+            "velocity": [
+              {
+                "timeout": 0.0,
+                "velocity": 0.0
+              }
+            ],
+            "position": [
+              {
+                "timeout": 0.0,
+                "ticks_to_move": 1234,
+                "max_speed": 1000,
+                "accel": 1.0,
+                "decel": 1.0
+              }
+            ]
+          }
+        },
+        "accessory_info": {
+          "actuator_feedback": {
+            "timestamp": 0,
+            "seq_id": 0,
+            "absolute_ticks": 0,
+            "measured_speed": 0.0
+          }
+        }
+      }
+    ],
+    "subsystems": [
+      {
+        "connection_type": "udp",
+        "name": "safety_system",
+        "port": 6000,
+        "ip": "10.3.1.59"
+      },
+      {
+        "connection_type": "udp",
+        "name": "rt_axes_controls",
+        "port": 5101,
+        "ip": "10.3.1.60"
+      },
+      {
+        "connection_type": "udp",
+        "name": "rt_axes_feedback",
+        "port": 5100,
+        "ip": "10.3.1.60"
+      }
+    ]
+  },
+
+  "test": {
+    "accessories": [
+      {
+        "accessory_idx": 1,
+        "accessory_name": "left_wheel",
+        "accessory_polarity": -1,
+        "accessory_params": {
+          "phys_params": {
+            "ticks_per_motor_rev": 16384,
+            "wheel_radius": 0.125,
+            "gearbox_ratio": 9.0,
+            "max_motor_speed": 2000
+          },
+          "sensor_params": {
+            "sensor_handle": 1
+          },
+          "actuator_params": {
+            "channel": 1,
+            "comm_type": "uart",
+            "uart": {
+              "channel": 1,
+              "baudrate": 115200
+            },
+            "driver_name": "hbl2360"
+          }
+        },
+        "accessory_controls": {
+          "feedback_frequency": 50,
+          "publish_feedback": 1,
+          "job_type": "velocity",
+          "jobs": {
+            "velocity": [
+              {
+                "timeout": 0.0,
+                "velocity": 0.0
+              }
+            ],
+            "position": [
+              {
+                "timeout": 0.0,
+                "ticks_to_move": 1234,
+                "max_speed": 1000,
+                "accel": 1.0,
+                "decel": 1.0
+              }
+            ]
+          }
+        },
+        "accessory_info": {
+          "actuator_feedback": {
+            "timestamp": 0,
+            "seq_id": 0,
+            "absolute_ticks": 0,
+            "measured_speed": 0.0
+          }
+        }
+      },
+      {
+        "accessory_idx": 2,
+        "accessory_name": "right_wheel",
+        "accessory_polarity": 1,
+        "accessory_params": {
+          "phys_params": {
+            "ticks_per_motor_rev": 16384,
+            "wheel_radius": 0.125,
+            "gearbox_ratio": 9.0,
+            "max_motor_speed": 3000
+          },
+          "sensor_params": {
+            "sensor_handle": 2
+          },
+          "actuator_params": {
+            "channel": 2,
+            "comm_type": "uart",
+            "uart": {
+              "channel": 1,
+              "baudrate": 115200
+            },
+            "driver_name": "hbl2360"
+          }
+        },
+        "accessory_controls": {
+          "feedback_frequency": 50,
+          "publish_feedback": 1,
+          "jobs": {
+            "velocity": [
+              {
+                "timestamp": 1,
+                "seq_id": "1",
+                "timeout": 0.0,
+                "velocity": 0.0
+              }
+            ],
+            "position": [
+              {
+                "timestamp": 1,
+                "seq_id": "1",
+                "timeout": 0.0,
+                "relative_pos": 1234,
+                "max_speed": 1000,
+                "accel": 1.0,
+                "decel": 1.0
+              }
+            ]
+          }
+        },
+        "accessory_info": {
+          "actuator_feedback": {
+            "timestamp": 0,
+            "seq_id": 0,
+            "absolute_ticks": 0,
+            "measured_speed": 0.0
+          }
+        }
+      },
+      {
+        "accessory_idx": 3,
+        "accessory_name": "lift",
+        "accessory_polarity": -1,
+        "accessory_params": {
+          "phys_params": {
+            "ticks_per_motor_rev":0,
+            "wheel_radius": 0.0,
+            "gearbox_ratio": 1.0,
+            "max_motor_speed": 2000
+          },
+          "sensor_params": {
+            "sensor_handle": 3
+          },
+          "actuator_params": {
+            "channel": 1,
+            "comm_type": "uart",
+            "uart": {
+              "channel": 2,
+              "baudrate": 115200
+            },
+            "driver_name": "hbl2360"
+          }
+        },
+        "accessory_controls": {
+          "feedback_frequency": 50,
+          "publish_feedback": 1,
+          "job_type": "velocity",
+          "jobs": {
+            "velocity": [
+              {
+                "timeout": 0.0,
+                "velocity": 0.0
+              }
+            ],
+            "position": [
+              {
+                "timeout": 0.0,
+                "ticks_to_move": 1234,
+                "max_speed": 1000,
+                "accel": 1.0,
+                "decel": 1.0
+              }
+            ]
+          }
+        },
+        "accessory_info": {
+          "actuator_feedback": {
+            "timestamp": 0,
+            "seq_id": 0,
+            "absolute_ticks": 0,
+            "measured_speed": 0.0
+          }
+        }
+      },
+      {
+        "accessory_idx": 4,
+        "accessory_name": "aux",
+        "accessory_polarity": -1,
+        "accessory_params": {
+          "phys_params": {
+            "ticks_per_motor_rev": 0,
+            "wheel_radius": 0.0,
+            "gearbox_ratio": 23.5,
+            "max_motor_speed": 2000
+          },
+          "sensor_params": {
+            "sensor_handle": 4
+          },
+          "actuator_params": {
+            "channel": 2,
+            "comm_type": "uart",
+            "uart": {
+              "channel": 2,
+              "baudrate": 115200
+            },
+            "driver_name": "hbl2360"
+          }
+        },
+        "accessory_controls": {
+          "feedback_frequency": 50,
+          "publish_feedback": 1,
+          "job_type": "velocity",
+          "jobs": {
+            "velocity": [
+              {
+                "timeout": 0.0,
+                "velocity": 0.0
+              }
+            ],
+            "position": [
+              {
+                "timeout": 0.0,
+                "ticks_to_move": 1234,
+                "max_speed": 1000,
+                "accel": 1.0,
+                "decel": 1.0
+              }
+            ]
+          }
+        },
+        "accessory_info": {
+          "actuator_feedback": {
+            "timestamp": 0,
+            "seq_id": 0,
+            "absolute_ticks": 0,
+            "measured_speed": 0.0
+          }
+        }
+      }
+    ],
+    "subsystems": [
+      {
+        "connection_type": "udp",
+        "name": "safety_system",
+        "port": 6000,
+        "ip": "10.3.1.59"
+      },
+      {
+        "connection_type": "udp",
+        "name": "rt_axes_controls",
+        "port": 5101,
+        "ip": "10.3.1.60"
+      },
+      {
+        "connection_type": "udp",
+        "name": "rt_axes_feedback",
+        "port": 5100,
+        "ip": "10.3.1.60"
+      }
+    ]
+  },
+  "butler_2_1_single_axis": {
+    "accessories": [
+      {
+        "accessory_idx": 1,
+        "accessory_name": "left_wheel",
+        "accessory_polarity": -1,
+        "accessory_params": {
+          "phys_params": {
+            "ticks_per_motor_rev": 147456,
+            "wheel_radius": 0.1016,
+            "gearbox_ratio": 9,
+            "max_motor_speed": 3000
+          },
+          "sensor_params": {
+            "sensor_handle": 1
+          },
+          "actuator_params": {
+            "channel": 1,
+            "comm_type": "uart",
+            "uart": {
+              "channel": 4,
+              "baudrate": 115200
+            },
+            "driver_name": "HBL2360"
+          }
+        },
+        "accessory_controls": {
+          "feedback_frequency": 50,
+          "publish_feedback": 1,
+          "job_type": "velocity",
+          "jobs": {
+            "velocity": [
+              {
+                "timeout": 0.0,
+                "velocity": 0.0
+              }
+            ],
+            "position": [
+              {
+                "timeout": 0.0,
+                "ticks_to_move": 1234,
+                "max_speed": 1000,
+                "accel": 1.0,
+                "decel": 1.0
+              }
+            ]
+          }
+        },
+        "accessory_info": {
+          "actuator_feedback": {
+            "timestamp": 0,
+            "seq_id": 0,
+            "absolute_ticks": 0,
+            "measured_speed": 0.0
+          }
+        }
+      }
+    ],
+    "subsystems": [
+      {
+        "name": "safety_system",
+        "port": 6000,
+        "ip": "10.3.1.59"
+      },
+      {
+        "name": "rt_axes_controls",
+        "port": 5101,
+        "ip": "10.3.1.60"
+      },
+      {
+        "name": "rt_axes_feedback",
+        "port": 5100,
+        "ip": "10.3.1.60"
+      }
+    ]
+  },
+  "butler_xl_1_0_wheels": {
+    "accessories": [
+      {
+        "accessory_idx": 1,
+        "accessory_name": "left_wheel",
+        "accessory_polarity": 1,
+        "accessory_params": {
+          "phys_params": {
+            "ticks_per_motor_rev": 16384,
+            "wheel_radius": 0.125,
+            "gearbox_ratio": 9.0,
+            "max_motor_speed": 2000
+          },
+          "sensor_params": {
+            "sensor_handle": 1
+          },
+          "actuator_params": {
+            "channel": 1,
+            "comm_type": "uart",
+            "uart": {
+              "channel": 4,
+              "baudrate": 115200
+            },
+            "driver_name": "elmo180"
+          }
+        },
+        "accessory_controls": {
+          "feedback_frequency": 50,
+          "publish_feedback": 1,
+          "job_type": "velocity",
+          "jobs": {
+            "velocity": [
+              {
+                "timeout": 0.0,
+                "velocity": 0.0
+              }
+            ],
+            "position": [
+              {
+                "timeout": 0.0,
+                "ticks_to_move": 1234,
+                "max_speed": 1000,
+                "accel": 1.0,
+                "decel": 1.0
+              }
+            ]
+          }
+        },
+        "accessory_info": {
+          "actuator_feedback": {
+            "timestamp": 0,
+            "seq_id": 0,
+            "absolute_ticks": 0,
+            "measured_speed": 0.0
+          }
+        }
+      },
+      {
+        "accessory_idx": 2,
+        "accessory_name": "right_wheel",
+        "accessory_polarity": -1,
+        "accessory_params": {
+          "phys_params": {
+            "ticks_per_motor_rev": 16384,
+            "wheel_radius": 0.125,
+            "gearbox_ratio": 9.0,
+            "max_motor_speed": 3000
+          },
+          "sensor_params": {
+            "sensor_handle": 2
+          },
+          "actuator_params": {
+            "channel": 1,
+            "comm_type": "uart",
+            "uart": {
+              "channel": 1,
+              "baudrate": 115200
+            },
+            "driver_name": "elmo180"
+          }
+        },
+        "accessory_controls": {
+          "feedback_frequency": 50,
+          "publish_feedback": 1,
+          "jobs": {
+            "velocity": [
+              {
+                "timestamp": 1,
+                "seq_id": "1",
+                "timeout": 0.0,
+                "velocity": 0.0
+              }
+            ],
+            "position": [
+              {
+                "timestamp": 1,
+                "seq_id": "1",
+                "timeout": 0.0,
+                "relative_pos": 1234,
+                "max_speed": 1000,
+                "accel": 1.0,
+                "decel": 1.0
+              }
+            ]
+          }
+        },
+        "accessory_info": {
+          "actuator_feedback": {
+            "timestamp": 0,
+            "seq_id": 0,
+            "absolute_ticks": 0,
+            "measured_speed": 0.0
+          }
+        }
+      }
+    ],
+    "subsystems": [
+      {
+        "connection_type": "udp",
+        "name": "safety_system",
+        "port": 6000,
+        "ip": "10.3.1.59"
+      },
+      {
+        "connection_type": "udp",
+        "name": "rt_axes_controls",
+        "port": 5101,
+        "ip": "10.3.1.60"
+      },
+      {
+        "connection_type": "udp",
+        "name": "rt_axes_feedback",
+        "port": 5100,
+        "ip": "10.3.1.60"
+      }
+    ]
+  },
+  "ninja_m1": {
+    "accessories": [
+      {
+        "accessory_idx": 1,
+        "accessory_name": "left_wheel",
+        "accessory_polarity": -1,
+        "accessory_params": {
+          "phys_params": {
+            "ticks_per_motor_rev": 16384,
+            "wheel_radius": 0.1016,
+            "gearbox_ratio": 9,
+            "max_motor_speed": 3000
+          },
+          "sensor_params": {
+            "sensor_handle": 1
+          },
+          "actuator_params": {
+            "channel": 1,
+            "comm_type": "uart",
+            "uart": {
+              "channel": 4,
+              "baudrate": 115200
+            },
+            "driver_name": "HBL2360"
+          }
+        },
+        "accessory_controls": {
+          "feedback_frequency": 50,
+          "publish_feedback": 1,
+          "job_type": "velocity",
+          "jobs": {
+            "velocity": [
+              {
+                "timeout": 0.0,
+                "velocity": 0.0
+              }
+            ],
+            "position": [
+              {
+                "timeout": 0.0,
+                "ticks_to_move": 1234,
+                "max_speed": 1000,
+                "accel": 1.0,
+                "decel": 1.0
+              }
+            ]
+          }
+        },
+        "accessory_info": {
+          "actuator_feedback": {
+            "timestamp": 0,
+            "seq_id": 0,
+            "absolute_ticks": 0,
+            "measured_speed": 0.0
+          }
+        }
+      },
+      {
+        "accessory_idx": 2,
+        "accessory_name": "right_wheel",
+        "accessory_polarity": 1,
+        "accessory_params": {
+          "phys_params": {
+            "ticks_per_motor_rev": 16384,
+            "wheel_radius": 0.1016,
+            "gearbox_ratio": 9,
+            "max_motor_speed": 3000
+          },
+          "sensor_params": {
+            "sensor_handle": 2
+          },
+          "actuator_params": {
+            "channel": 2,
+            "comm_type": "uart",
+            "uart": {
+              "channel": 4,
+              "baudrate": 115200
+            },
+            "driver_name": "HBL2360"
+          }
+        },
+        "accessory_controls": {
+          "feedback_frequency": 50,
+          "publish_feedback": 1,
+          "jobs": {
+            "velocity": [
+              {
+                "timestamp": 1,
+                "seq_id": "1",
+                "timeout": 0.0,
+                "velocity": 0.0
+              }
+            ],
+            "position": [
+              {
+                "timestamp": 1,
+                "seq_id": "1",
+                "timeout": 0.0,
+                "ticks_to_move": 1234,
+                "max_speed": 1000,
+                "accel": 1.0,
+                "decel": 1.0
+              }
+            ]
+          }
+        },
+        "accessory_info": {
+          "actuator_feedback": {
+            "timestamp": 0,
+            "seq_id": 0,
+            "absolute_ticks": 0,
+            "measured_speed": 0.0
+          }
+        }
+      }
+    ],
+    "subsystems": [
+      {
+        "connection_type": "udp",
+        "name": "safety_system",
+        "port": 6000,
+        "ip": "10.3.1.60"
+      },
+      {
+        "connection_type": "udp",
+        "name": "rt_axes_controls",
+        "port": 5101,
+        "ip": "10.3.1.59"
+      },
+      {
+        "connection_type": "udp",
+        "name": "rt_axes_feedback",
+        "port": 5100,
+        "ip": "10.3.1.59"
+      }
+    ]
+  },
+  "proto_test": {
+    "accessories": [
+      {
+        "accessory_idx": 1,
+        "accessory_name": "left_wheel",
+        "accessory_params": {
+          "phys_params": {
+            "ticks_per_motor_rev": 16384,
+            "wheel_radius": 0.125,
+            "gearbox_ratio": 9,
+            "max_motor_speed": 3000
+          },
+          "sensor_params": {
+            "sensor_handle": 1
+          },
+          "actuator_params": {
+            "channel": 0,
+            "comm_type": "uart",
+            "uart": {
+              "channel": 4,
+              "baudrate": 115200
+            },
+            "driver_name": "HBL2360"
+          }
+        },
+        "accessory_controls": {
+          "feedback_frequency": 50,
+          "publish_feedback": 1,
+          "job_type": "velocity",
+          "jobs": {
+            "velocity": [
+              {
+                "timeout": 0.0,
+                "velocity": 0.0
+              }
+            ],
+            "position": [
+              {
+                "timeout": 0.0,
+                "ticks_to_move": 1234,
+                "max_speed": 1000,
+                "accel": 1.0,
+                "decel": 1.0
+              }
+            ]
+          }
+        },
+        "accessory_info": {
+          "actuator_feedback": {
+            "timestamp": 0,
+            "seq_id": 0,
+            "absolute_ticks": 0,
+            "measured_speed": 0.0
+          }
+        }
+      },
+      {
+        "accessory_idx": 2,
+        "accessory_name": "right_wheel",
+        "accessory_params": {
+          "phys_params": {
+            "ticks_per_motor_rev": 16384,
+            "wheel_radius": 0.125,
+            "gearbox_ratio": 9,
+            "max_motor_speed": 3000
+          },
+          "sensor_params": {
+            "sensor_handle": 2
+          },
+          "actuator_params": {
+            "channel": 1,
+            "comm_type": "uart",
+            "uart": {
+              "channel": 4,
+              "baudrate": 115200
+            },
+            "driver_name": "HBL2360"
+          }
+        },
+        "accessory_controls": {
+          "feedback_frequency": 50,
+          "publish_feedback": 1,
+          "jobs": {
+            "velocity": [
+              {
+                "timestamp": 1,
+                "seq_id": "1",
+                "timeout": 0.0,
+                "velocity": 0.0
+              }
+            ],
+            "position": [
+              {
+                "timestamp": 1,
+                "seq_id": "1",
+                "timeout": 0.0,
+                "ticks_to_move": 1234,
+                "max_speed": 1000,
+                "accel": 1.0,
+                "decel": 1.0
+              }
+            ]
+          }
+        },
+        "accessory_info": {
+          "actuator_feedback": {
+            "timestamp": 0,
+            "seq_id": 0,
+            "absolute_ticks": 0,
+            "measured_speed": 0.0
+          }
+        }
+      }
+    ],
+    "subsystems": [
+      {
+        "connection_type": "udp",
+        "name": "rt_axes_feedback",
+        "port": 6101,
+        "ip": "10.3.1.70"
+      },
+      {
+        "connection_type": "tcp",
+        "name": "rt_axes_controls",
+        "port": 6100,
+        "ip": "10.3.1.95"
+      }
+    ]
+  }
+}

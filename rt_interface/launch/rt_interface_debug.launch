@@ -1,0 +1,6 @@
+<launch>
+
+  <node name="rt_interface" pkg="rt_interface" type="RTInterfaceNode" output="screen" launch-prefix="cgdb"/>
+
+</launch>
+
